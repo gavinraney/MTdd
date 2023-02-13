@@ -23,5 +23,6 @@ public class BankAccount {
 	
 	public void transfer(int amount, BankAccount other) {
 		this.balance -= amount;
+		other.balance += amount;
 	}
 }
